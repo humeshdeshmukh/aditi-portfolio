@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #f2f2f2;
+    background-color: #1a1a1a;
+    scroll-behavior: smooth;
+  }
+  
+  /* Transparent Navbar Styling */
+#main-navbar {
+    background-color: transparent; /* Fully transparent background */
+    transition: background-color 0.4s ease; /* Smooth transition */
+}
+
+/* Hover effect to change opacity when scrolling */
+#main-navbar.scrolled {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue when scrolled */
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff; /* White color for better visibility */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Nav Link Styling */
+.nav-link {
+    color: #ffffff; /* White color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Active Link Styling */
+.nav-item .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700; /* Active link underline */
+}
+
+/* Responsive Toggler Icon */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffd700; /* Gold color for toggler icon */
+}
+
+
+  
+  /* Hero Section Styling */
+.hero {
+    background-image: url('./assets/background.webp'); /* Add your desired background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    color: #ffffff; /* Text color */
+    position: relative; /* For pseudo-elements */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow for readability */
+}
+
+/* Pseudo-elements for overlay effect */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.container {
+    position: relative; /* Ensure container is above the overlay */
+    z-index: 2; /* Bring content above the overlay */
+}
+
+/* Tagline Styling */
+.tagline {
+    font-style: italic; /* Italic for emphasis */
+    margin: 1rem 0; /* Spacing around the tagline */
+    font-size: 1.25rem; /* Slightly larger font size */
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 1.5rem; /* Space between tagline and links */
+}
+
+.social-icon {
+    font-size: 1.5rem; /* Size of social icons */
+    margin: 0 1rem; /* Spacing between icons */
+    color: #ffffff; /* Icon color */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Button Styling */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #000; /* Dark text on hover */
+}
+
+/* Heading Styling */
+h1 {
+    margin-bottom: 0.5rem; /* Spacing between heading and paragraph */
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 1.5rem; /* Spacing between paragraph and button */
+}
+
+
+
+  
+/* About Section Styling */
+#about {
+    position: relative; /* To position child elements */
+    overflow: hidden; /* Prevents overflow of elements */
+    background-image: url('./assets/about1.jpeg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Default text color for better contrast */
+    padding: 60px 0; /* Additional padding for top and bottom */
+}
+
+/* Heading Styles */
+#about h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: bold; /* Bold font */
+    color: #ffd700; /* Gold color for heading */
+    margin-bottom: 1.5rem; /* Spacing below heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+#about h2:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Paragraph Styles */
+#about p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #e0e0e0; /* Light gray for contrast */
+    line-height: 1.6; /* Better spacing for readability */
+}
+
+/* Row Styles */
+#about .row {
+    margin-top: 2rem; /* Spacing above row */
+}
+
+/* Subheading Styles */
+#about h4 {
+    font-size: 1.5rem; /* Size for subheadings */
+    margin-bottom: 1rem; /* Spacing below subheadings */
+    color: #ffd700; /* Gold color for subheadings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* List Styles */
+#about ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#about ul li {
+    font-size: 1.1rem; /* Adjust list item font size */
+    color: #e0e0e0; /* Light gray for list items */
+    margin-bottom: 0.5rem; /* Spacing between list items */
+    position: relative; /* For the custom bullet effect */
+}
+
+#about ul li::before {
+    content: "✔️"; /* Custom bullet point */
+    color: #ffd700; /* Gold color for the bullet */
+    position: absolute; /* Position relative to the list item */
+    left: -25px; /* Adjust left position */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; /* Button border color */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3; /* Button border on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+  
+  /* Skills Section Styling */
+#skills {
+    background-color: #000; /* Black background */
+    color: #ffffff; /* White text for contrast */
+    padding: 60px 0; /* Additional padding */
+}
+
+#skills h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: bold; /* Bold font */
+    color: #ffd700; /* Gold color for heading */
+    margin-bottom: 1.5rem; /* Spacing below heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+#skills h4 {
+    font-size: 1.5rem; /* Size for subheadings */
+    margin-bottom: 1rem; /* Spacing below subheadings */
+    color: #ffd700; /* Gold color for subheadings */
+}
+
+#skills p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #e0e0e0; /* Light gray for contrast */
+    line-height: 1.6; /* Better spacing for readability */
+}
+
+/* Optional Hover Effect */
+#skills .col-md-4 {
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+#skills .col-md-4:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+  
+
+
+/* Projects Section Styling */
+#projects {
+    background-color: #000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Additional padding */
+}
+
+#projects h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: bold; /* Bold font */
+    color: #ffd700; /* Gold color for heading */
+    margin-bottom: 2rem; /* Spacing below heading */
+}
+
+.project-card {
+    border-radius: 10px; /* Rounded corners for card */
+}
+
+.project-card img {
+    border-top-left-radius: 10px; /* Rounded corners for top of card */
+    border-top-right-radius: 10px; /* Rounded corners for top of card */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger title for project */
+    color: #ffd700; /* Gold color for title */
+    margin-bottom: 1rem; /* Spacing below title */
+}
+
+.card-body p {
+    color: #e0e0e0; /* Light gray for project description */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Bootstrap warning color */
+    border-color: #ffc107; /* Button border color */
+}
+
+.btn-warning:hover {
+    background-color: #d39e00; /* Darker shade on hover */
+    border-color: #d39e00; /* Button border on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #projects .row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+}
+
+ 
+ /* Education Section Styling */
+#education {
+    background-color: #1a1a1a; /* Dark background for education */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Additional padding */
+}
+
+#education h2 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #ffd700; /* Gold color for heading */
+    margin-bottom: 2rem; /* Spacing below heading */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.card-title {
+    font-weight: bold; /* Bold title */
+}
+
+.card-text {
+    margin-bottom: 1rem; /* Spacing below text */
+}
+
+img {
+    transition: transform 0.3s ease; /* Image transition */
+}
+
+img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+
+/* Contact Section Styling */
+#contact {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Additional padding */
+}
+
+#contact h2 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #ffd700; /* Gold color for heading */
+    margin-bottom: 1.5rem; /* Spacing below heading */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.card-title {
+    font-weight: bold; /* Bold title */
+    font-size: 1.5rem; /* Slightly larger title font */
+}
+
+.card-text {
+    margin-bottom: 1rem; /* Spacing below text */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a; /* Dark background for the footer */
+    color: #ffffff; /* White text for contrast */
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem; /* Increase icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer .social-icons a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.footer nav a {
+    font-size: 1rem; /* Navigation link size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.footer small {
+    display: block; /* Make sure it appears on a new line */
+    margin-top: 10px; /* Space above the small text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #cccccc; /* Light grey for less emphasis */
+}
+

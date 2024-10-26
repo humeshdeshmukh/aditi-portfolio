@@ -59,7 +59,7 @@ body {
   
   /* Hero Section Styling */
 .hero {
-    background-image: url('./assets/background.webp'); /* Add your desired background image */
+    background-image: url('background.webp'); /* Add your desired background image */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
@@ -135,7 +135,7 @@ p {
 #about {
     position: relative; /* To position child elements */
     overflow: hidden; /* Prevents overflow of elements */
-    background-image: url('./assets/about1.jpeg'); /* Replace with your background image path */
+    background-image: url('about1.jpeg'); /* Replace with your background image path */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     color: #ffffff; /* Default text color for better contrast */
